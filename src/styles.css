@@ -26,14 +26,37 @@ h1 {
 }
 
 .note {
-  background-color: #f9f9f9;
-  padding: 20px;
+  position: relative;
+  width: 200px; 
+  height: 200px; 
+  border: 1px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 
-.note p {
-  margin: 0;
+.edit-btn,
+.delete-btn {
+  position: absolute;
+  background-color: #f00; 
+  color: #fff; 
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-btn {
+  top: 8px;
+  right: 8px;
+}
+
+.delete-btn {
+  bottom: 8px;
+  right: 8px;
 }
 
 button {
@@ -48,4 +71,8 @@ button {
 
 button:hover {
   background-color: #d8555f;
+}
+
+.note p { 
+  margin: 0;
 }
